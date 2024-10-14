@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title> face recognition</title>
+</head>
+
+<body>
+	<h1> Face recognition </h1>
+	<h3> Please look at the camera </h3>
+	<img id="bg" src="{{ url_for('video_feed') }}">
+	<form action="{{ url_for('start_recognition') }}">
+		<input type="submit" value="Click here to start face recognition">
+	</form>
+</body>
+</html>
